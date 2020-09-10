@@ -7,9 +7,13 @@
     "sourceMap": true,
     "strict": true,
     "target": "es2017"
+    // "noImplicitAny": true
+    // "typeRoots": ["./node_modules/@types", "../types"],
+    // "allowSyntheticDefaultImports": true,
+    // "esModuleInterop": true,
+    // "forceConsistentCasingInFileNames": true,
+    // "resolveJsonModule": true
   },
   "compileOnSave": true,
-  "include": [
-    "src"
-  ]
+  "include": ["src"]
 }
