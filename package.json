@@ -1,0 +1,23 @@
+{
+  "name": "evan-blog-api",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Evan's personal API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/evan-moon/evan-blog-api.git"
+  },
+  "author": "Evan Moon <bboydart91@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/evan-moon/evan-blog-api/issues"
+  },
+  "homepage": "https://evan-moon.github.io",
+  "dependencies": {
+    "firebase-tools": "^8.10.0"
+  }
+}
