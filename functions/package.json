@@ -3,9 +3,10 @@
   "scripts": {
     "lint": "tslint --project tsconfig.json",
     "build": "tsc",
-    "serve": "npm run build && npx firebase emulators:start --only functions",
-    "shell": "npm run build && npx firebase functions:shell",
-    "start": "npm run shell",
+    "serve": "yarn build && npx firebase emulators:start --only functions",
+    "dev": "yarn serve",
+    "shell": "yarn build && npx firebase functions:shell",
+    "start": "yarn shell",
     "deploy": "npx firebase deploy --only functions",
     "logs": "npx firebase functions:log"
   },

@@ -16,7 +16,7 @@ export const incrementViewCount = async (req: Request, res: Response) => {
   try {
     const { snapshot } = await ref.transaction(currentViews => {
       if (currentViews == null) {
-        return 0;
+        return 1;
       } else {
         return currentViews + 1;
       }
