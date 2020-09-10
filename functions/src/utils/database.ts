@@ -1,15 +1,12 @@
 import * as admin from 'firebase-admin';
-import * as dotenv from 'dotenv';
-import { join } from 'path';
-dotenv.config({ path: join(__dirname, '../../../.env') });
+import { project_id, private_key, client_email } from '../service-account.json';
 
-const cert = {
-  projectId: process.env.PROJECT_ID,
-  privateKey: process.env.PRIVATE_KEY?.replace(/\\n/g, '\n'),
-  clientEmail: process.env.CLIENT_EMAIL,
-};
 admin.initializeApp({
-  credential: admin.credential.cert(cert),
+  credential: admin.credential.cert({
+    projectId: project_id,
+    privateKey: private_key,
+    clientEmail: client_email,
+  }),
   databaseURL: 'https://evan-250412.firebaseio.com/',
 });
 
